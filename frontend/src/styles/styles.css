@@ -1,0 +1,519 @@
+/* FUENTES Y TAMAÑOS */
+/* font-family: 'Lexend'; */
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* COLORES */
+
+:root {
+  --yellow: #ffd87eff;
+  --green-light: #97b8a5ff;
+  --green-dark: #477d5e;
+  --sky-blue: #deeaecff;
+  --coral: #f18b7eff;
+  --pink-light: #ffe4ddff;
+  --grey-dark: #3f3f3fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* min-height: 100vh; */
+}
+
+/* h1 {
+  font-family: "Lexend";
+  font-size: 36px !important;
+  font-weight: 900 !important;
+} */
+
+h2 {
+  font-family: "Lexend";
+  font-size: 30px !important;
+  font-weight: 800 !important;
+}
+
+h3 {
+  font-family: "Lexend";
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+
+.boton:hover {
+  color: #477d5e !important;
+  background-color: #97b8a5ff !important;
+}
+
+.boton {
+  font-family: "Lexend";
+  font-size: 30px !important;
+  font-weight: 800 !important;
+  background-color: #477d5e !important;
+  color: #ffffff !important;
+  border-radius: 15px;
+}
+
+p {
+  text-align: center;
+}
+
+.texto__grande {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: clamp(0.8rem, 1.1vw, 1.3rem);
+}
+
+.texto__mediano {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 18px;
+}
+
+.texto__pequeño {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 14px;
+}
+
+.texto__rosa {
+  color: #f18b7eff !important;
+}
+
+/*--------------------------------NAVBAR------------------------------------*/
+
+nav {
+  border-bottom: 1.5px solid rgba(151, 184, 165, 0.5);
+  box-shadow: 0px 5px 12px rgba(151, 184, 165, 0.25);
+}
+
+.logo-style {
+  height: clamp(50px, 10vw, 90px);
+}
+
+.btn-close {
+  width: 4em;
+  height: 5em;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(151, 184, 165, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.fond-style {
+  background-color: var(--pink-light);
+}
+
+.text-style {
+  color: #477d5e;
+  font-family: Lexend;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.text-style {
+  font-size: clamp(0.5em, 1.5vw, 1.4em);
+}
+
+.menu-style > li > a > span {
+  transition: all 300ms;
+}
+
+.menu-style > li > a > span:hover {
+  display: block;
+  color: var(--coral);
+  transform: translateY(-5px);
+}
+
+.menu-style > li > a > span:hover::after {
+  height: 5px;
+  width: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  background: var(--coral);
+}
+
+@media (max-width: 576px) {
+  .logo-style {
+    height: 80px;
+  }
+
+  nav {
+    border: none;
+  }
+
+  .fond-style {
+    background-color: var(--green-light);
+  }
+  .text-style {
+    color: #ffffffcc;
+    font-family: Lexend;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .menu-style > li > a > span:hover {
+    color: var(--green-dark);
+    display: inline-block;
+  }
+  .menu-style > li > a > span:hover::after {
+    background: var(--green-dark);
+  }
+}
+
+/*-------------------------------FIN-NAVBAR------------------------------------*/
+
+/*-------------------------------SECTION PERRITO------------------------------------*/
+
+/* .contenedor-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+  
+} */
+
+.contendor-sobre-nosotros {
+  margin: 0;
+  padding: 5px 20px 0 20px;
+}
+
+.titulo-sobre-nosotros {
+  margin-top: 50px;
+  text-align: center;
+  font-family: Lexend;
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--green-dark);
+}
+
+.contenedor-img-perro-mov {
+  display: flex;
+  justify-content: center;
+}
+
+.img-perro-movil {
+  width: 250px;
+  margin: 0px 0px 30px 0;
+}
+
+.texto-nosotros {
+  font-size: 14px;
+  font-family: Hind Madurai;
+}
+
+.texto-rosita {
+  color: #f18b7e;
+}
+
+.texto-negrita {
+  color: black;
+  font-weight: 500;
+}
+
+.img-perro {
+  display: none;
+}
+
+/*-----------------------------------------Fin Seccion PERRITO------------------------------------------------ */
+
+/*---------------------------------------------Seccion "Donación"--------------------------------------------- */
+
+.contenedor-donacion {
+  margin: 0;
+  padding: 5px 20px 0 20px;
+}
+
+.img-donacion {
+  width: 250px;
+}
+
+.contenedor-img-donacion {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 30px 0;
+}
+
+.texto-donacion {
+  font-family: Hind Madurai;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.contenedor-boton {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.boton-donacion {
+  margin: 10px;
+  background-color: var(--grey-dark);
+  padding: 8px 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  color: var(--yellow);
+  font-size: 15px;
+  font-family: Lexend;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.boton-donacion:hover {
+  background-color: var(--yellow);
+  border: 2px solid black;
+  color: black;
+}
+
+/*---------------------------------------------Fin Seccion "Donación"----------------------------------------- */
+
+/*---------------------------------------------FOOTER-------------------------------------------*/
+/* REDES */
+
+.icon-size {
+  height: 40px;
+  width: 50px;
+  left: 372px;
+  top: 5px;
+  color: #ffffff;
+}
+
+/* ----REDES Final---------- */
+
+/* ----------SATUARIO ANIMAL---------- */
+.chico {
+  font-size: clamp(1.5em, 1.5vw, 3em);
+  color: #ffffff;
+}
+div ul {
+  list-style: none;
+  padding: 0;
+}
+li a {
+  text-decoration: none;
+  font-family: Hind Madurai;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.arreglo .contenedor_lista .lista .item {
+  background-color: transparent;
+  border: 5px solid #477d5e;
+  color: rgb(255, 255, 255);
+}
+.arreglo .contenedor_lista .lista .item:hover {
+  color: #f2d6cb;
+}
+
+/* ----------SATUARIO ANIMAL fINAL------------------- */
+
+/* ----------DONAR------------------- */
+.botoon {
+  border: none;
+  border-radius: 15px;
+  color: #477d5e;
+  height: 60px;
+  width: 160px;
+  font-family: Lexend;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 37.5px;
+  background: #97b8a5;
+  padding: 18px;
+  text-decoration: none;
+}
+.botoon:hover {
+  background: #f18b7e;
+  color: #f2d6cb;
+}
+.Donar {
+  text-align: center;
+}
+
+footer {
+  background-image: url(/frontend/src/assets/ola_escritorio.svg);
+  height: 480px;
+  margin-top: 25px;
+  display: flex;
+  align-items: end;
+}
+
+.chico {
+  font-size: clamp(1.5em, 1.5vw, 3em);
+}
+
+@media (max-width: 991px) {
+  footer .arreglo {
+    display: none;
+  }
+  footer .foto .margen {
+    margin-bottom: 98px;
+  }
+}
+
+@media (max-width: 768px) {
+  .margen {
+    margin-bottom: 98px;
+  }
+}
+
+@media (max-width: 420px) {
+  footer .chico {
+    font-size: 14px;
+  }
+  .icon-size {
+    height: 20px;
+    width: 20px;
+  }
+  .botoon {
+    width: 86px !important;
+    height: 26px !important;
+    padding-top: 6px;
+    padding-bottom: 11px;
+    font-size: 18px;
+  }
+  .margen {
+    margin-bottom: 21px;
+  }
+
+  footer {
+    background-image: url(/frontend/src/assets/ola_pequeña_verde.svg);
+    background-size: 560px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+/*------------------------------------------Fin-FOOTER-------------------------------------------*/
+
+@media (min-width: 576px) {
+  .contenedor-img-perro-mov {
+    display: none;
+  }
+
+  .texto-nosotros {
+    font-size: 12px;
+    font-family: Hind Madurai;
+  }
+
+  .contendor-sobre-nosotros {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .img-perro {
+    display: block;
+    width: 250px;
+  }
+
+  /*--------------------------------------------------------------*/
+
+  .contenedor-donacion {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .img-donacion {
+    width: 250px;
+  }
+
+  .texto-donacion {
+    font-family: Hind Madurai;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  .boton-donacion {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedor-texto {
+    width: 400px;
+  }
+
+  .contendor-sobre-nosotros {
+    margin: 30px;
+  }
+
+  .contendor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /*--------------------------------------------------------------*/
+
+  .contenedor-donacion {
+    margin: 30px;
+  }
+
+  .contenedor-donacion {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .boton-donacion {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .contenedor-texto {
+    width: 500px;
+  }
+
+  .contenedor-img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .img-perro {
+    display: inline-block;
+    width: 450px;
+  }
+
+  .texto-nosotros {
+    font-size: 18px;
+  }
+
+  /*--------------------------------------------------------------*/
+
+  .img-donacion {
+    width: 450px;
+  }
+
+  .texto-donacion {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .texto-nosotros {
+    font-size: 22px;
+  }
+
+  /*--------------------------------------------------------------*/
+
+  .texto-donacion {
+    font-size: 22px;
+  }
+
+  .img-donacion {
+    width: 550px;
+  }
+}
